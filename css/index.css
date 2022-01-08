@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.content{ 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.main-body{
+    padding: 5%;
+    box-sizing:  border-box;
+    background: linear-gradient(to bottom right, rgb(73, 73, 73) , rgb(255, 255, 255));
+    height: 100vh;
+    width: 100vw;
+}
+
+.login{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5% 0% 5%;
+    box-sizing:  border-box;
+    
+}
+.sidePic
+{
+    background-color: cadetblue;
+    height: 100%;
+    width: 50%;
+    display: block;
+    background-image: url(../Pics/1917358.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+
+input[type=text], select,input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=text]:focus,input[type=password]:focus{
+      border: #47B6D1 solid;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #575757;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+    transition-property:background-color;
+  }
+
+  input[type=submit]:hover {
+    background-color: #474747;
+  }
+
+  .logo{
+      width: 95px;
+      height: 95px;
+      background-color: rgba(52, 52, 53, 0.767);
+      border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+   .sidePic{
+       display: none;
+   }
+   .login{
+       width: 100%;
+   }
+  }
