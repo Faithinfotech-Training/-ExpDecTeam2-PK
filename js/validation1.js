@@ -16,3 +16,21 @@ function checkName(idEle) {
   } 
 }
 
+function checkPhone(idEle) { 
+  phoneObj = document.getElementById(idEle);
+  phoneObj.classList.remove("is-invalid");
+  value = phoneObj.value;
+  console.log(value);
+  if (value == "") {
+    console.log("Phone is a mandatory field");
+  }
+
+  if (value.match(/[^0-9]/g)) {
+    phoneObj.classList.add("is-invalid");
+  }
+
+  if (value.length != 10) {
+    phoneObj.classList.add("is-invalid");
+  }
+}
+
