@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.container{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.logo
+{
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.picLayer{
+    height: 100%;
+    background-color: rgba(0, 140, 216, 0.253);
+
+}
+
+
+.main_body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.shapePic{
+    background-color:  rgb(30 41 51);
+    height: 91vh;
+    clip-path: circle(90% at 5% 15%);
+    background-image: url(Pics/741810.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.formSide{
+    padding-top: 10%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+
+}
+
+.form{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidePicCol{
+        display: none;
+    }
+    .container
+    {
+        margin-left: var(--bs-gutter-x,.75rem) !important;
+        padding-left: var(--bs-gutter-x,.75rem) !important;
+
+    }
+   }
