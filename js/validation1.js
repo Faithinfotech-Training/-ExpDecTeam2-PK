@@ -32,21 +32,48 @@ function checkPhone(idEle) {
     console.log("Phone is a mandatory field");
 
   }
-
-
-
   if (value.match(/[^0-9]/g)) {
 
     phoneObj.classList.add("is-invalid");
 
   }
-
-
-
   if (value.length != 10) {
 
     phoneObj.classList.add("is-invalid");
-
   }
 
 }
+
+
+function checkDOB(idEle) {
+
+  dateObj = document.getElementById(idEle);
+
+  dateObj.classList.remove("is-invalid");
+
+  value = dateObj.value;
+
+  console.log(value);
+
+  if (value == "") {
+
+    console.log("DOB is a mandatory field");
+
+  }
+
+  let today=new Date();
+
+  let compDay=new Date(value);
+
+  console.log(today);
+
+  if (today<=compDay) {
+
+    dateObj.classList.add("is-invalid");
+
+  }
+
+
+
+}
+
