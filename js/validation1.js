@@ -19,13 +19,9 @@ function checkName(idEle) {
 
 function checkPhone(idEle) {
   phoneObj = document.getElementById(idEle);
-
   phoneObj.classList.remove("is-invalid");
-
   value = phoneObj.value;
-
   console.log(value);
-
   if (value == "") {
     console.log("Phone is a mandatory field");
   }
@@ -37,29 +33,25 @@ function checkPhone(idEle) {
   }
 }
 
+
+
 function checkDOB(idEle) {
   dateObj = document.getElementById(idEle);
-
   dateObj.classList.remove("is-invalid");
-
   value = dateObj.value;
-
   console.log(value);
-
   if (value == "") {
     console.log("DOB is a mandatory field");
   }
-
   let today = new Date();
-
   let compDay = new Date(value);
-
   console.log(today);
-
   if (today <= compDay) {
     dateObj.classList.add("is-invalid");
   }
 }
+
+
 
 function checkNumber(idEle) {
   Obj = document.getElementById(idEle);
